@@ -39,12 +39,14 @@ Examples removeFirstLast("hello") ➞ "ell" removeFirstLast("maybe") ➞ "ayb"
 removeFirstLast("benefit") ➞ "enefi" removeFirstLast("a") ➞ "a" Notes If the string is 2 or fewer characters long, 
 return the string itself (See Example #4). */
 function removeFirstLast(str) {
-  if (str.length > 2) return str.slice(1, str.length - 1);
+  if (str.length > 2) 
+  return str.slice(1, str.length - 1);
   else return str;
 }
 console.log(removeFirstLast("hello"));
 console.log(removeFirstLast("maybe"));
 console.log(removeFirstLast("benefit"));
+console.log(removeFirstLast('a'));
 
 /**Create a function that returns true if an input string contains only uppercase or only lowercase letters. 
 Examples sameCase("hello") ➞ true sameCase("HELLO") ➞ true sameCase("Hello") ➞ false sameCase("ketcHUp") ➞ false */

@@ -14,7 +14,7 @@ function reverseArray(arr) {
 }
 console.log(reverseArray([1, 2, 3, 4, 5]));
 
-/**/ /Reverse the original array (without using a second array [to save some space in main memory]) */;
+/** /Reverse the original array (without using a second array [to save some space in main memory]) */;
 function reverseArray2(arr) {
   for (let i = 0; i < arr.length; i++) {
     arr.splice(i, 0, arr[arr.length - 1]);

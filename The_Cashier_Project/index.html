@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/The_Cashier_Project/style.css" />
+    <title>The Cashier Problem</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header-container">The Cashier Problem</h1>
+    </header>
+    <main role="main" class="main-container">
+      <div class="container form-margin">
+        <form>
+          <div class="form-group">
+            <label for="inputPrice">Price:</label>
+            <input type="number" class="form-control" id="inputPrice" />
+          </div>
+          <div class="form-group">
+            <label for="inputCash">Cash:</label>
+            <input type="number" class="form-control" id="inputCash" />
+          </div>
+          <div class="text-center">
+            <button
+              type="submit"
+              class="btn btn-primary btn-lg"
+              onclick="checkCash()"
+            >
+              Change
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='/The_Cashier_Project/script2.js'></script>
+  </body>
+</html>
