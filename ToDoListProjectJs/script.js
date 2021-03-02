@@ -1,11 +1,10 @@
-
 document.getElementById("button").addEventListener("click", createTask);
 function createTask(event) {
   event.preventDefault();
 
   let input = document.querySelector("input");
   if (input.value === "") {
-    alert("You have to write the task before creating list");
+    alert("You have to write the task before clicking on creating task");
   }
 
   let section = document.querySelector("section");
@@ -15,7 +14,7 @@ function createTask(event) {
   span.innerHTML = "X";
   section.appendChild(paragraph);
   paragraph.appendChild(span);
-  paragraph.classList.add('paragraph')
+  paragraph.classList.add("paragraph");
   span.classList.add("float");
   input.value = "";
 
@@ -26,6 +25,6 @@ function createTask(event) {
   }
 }
 
-function clearList() {
-  input.value = "";
-}
+// function clearList() {
+//   input.value = "";
+// }
