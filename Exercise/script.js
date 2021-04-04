@@ -11,7 +11,7 @@ function isPalindrome(str) {
     return false;
   }
   if (string.length % 2 === 0) {
-    count = string.length / 2;
+    count = string.length / 2;  
   } else if (string.length === 1) {
     console.log("The string is palindrome");
     return true;
@@ -27,6 +27,9 @@ function isPalindrome(str) {
   console.log("The string is palindrome");
   return true;
 }
+
+//nursesrun -1-0 slice(-1)[0]
+ //              slice(-2)[0]
 
 console.log(isPalindrome("nurses run"));
 console.log(isPalindrome("Madam"));
@@ -124,3 +127,11 @@ white_tick
 eyes
 raised_hands
 */
+
+ function numToArrayOfDigits(num) {
+   let str = "" + num;
+   return str.split("").map(Number);
+ }
+
+ console.log(numToArrayOfDigits(132123));
+
